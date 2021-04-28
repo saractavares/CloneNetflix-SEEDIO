@@ -1,0 +1,148 @@
+:root{
+    --vermelho:rgb(255, 8, 8);
+    --preto:rgb(27, 26, 26);
+}
+
+body{
+    background-color:#000000;
+    background-image: linear-gradient(to right, transparent, rgba(8, 133, 8, 0.973)100%);
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.712); 
+    margin: 10px 20px 0 0;
+}
+nav, a:hover{
+    color: rgb(255, 255, 255);
+}
+
+header .logo{
+    background: linear-gradient(to right, rgb(123, 245, 112), rgb(2, 129, 8) 100%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 40pt;
+    font-family:'Times New Roman', Times, serif;
+    margin: 10px 0 0 20px;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+
+}
+
+
+/* filme principal */
+.filme-principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.658), rgba(0, 0, 0, 0.644)100%), url('/img/capa-vanda.jpg');
+    height: 650px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+
+.filme-principal .descricao{
+    margin-bottom: 20px;
+    margin-top: 5%;
+    margin-left: 2%;
+
+}
+
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 30pt;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 2%;
+}
+
+.fas {
+    padding-left: 2%;
+}
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    height: auto;
+    margin-right: 1%;
+    margin-left: 2%;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(87, 175, 52, 0.911);
+    color: black;
+}
+
+.recentes{
+    margin-left: 2%;
+    margin-top: 5px;
+    background-color: #000000;
+    font-family: sans-serif;
+    background: linear-gradient(to right, rgba(15, 236, 45, 0.89), rgb(250, 250, 250) 20%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 2%;
+}
+
+.box-filme:hover{
+    opacity: 60%;
+    transition: .5s;    
+}
+.ano{
+    display: flex;
+    float: right;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: rgba(255, 255, 255, 0.322);
+    border-radius: 10px;
+}
+
+.temporada{
+    float:right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes{
+    margin-top: 5px;
+}
+
+.container-p{
+    padding-left: 2%;
+    color: rgba(200, 212, 185, 0.726);
+    margin-bottom: 1%;
+}
